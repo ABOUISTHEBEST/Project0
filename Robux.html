@@ -15,6 +15,7 @@
     font-size: 36px;
     font-family: 'Times New Roman', Times, serif;
     background-color: green;
+    color: white;
         }a{
                 border: 5px solid greenyellow ();
                 margin: 25px;
@@ -22,28 +23,31 @@
                 font-size: 36px;
                 font-family: 'Times New Roman', Times, serif;
                 background-color: gold ;}        
-                button{ background-color: rgb(255, 0, 0);
+                button{ background-color: rgb(63, 63, 63);
             Color: white;
             Padding: 10px;
             border:solid 20px rgb(255, 255, 255);
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;}
-                
+                p{ background-color: rgb(63, 63, 63);
+            Color: white;
+            Padding: 10px;
+            border:solid 20px rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;}
     </style>
-    <script src="script.js"></script> 
+
 </head>
 <body>
-    <div class="Menu"> 
-        <a href="Lol.html">Lol</a>
-<a href="Robux.html">Robux</a>
-<a href="Limited.html">Limted's</a>
-<a href="Hacks.html">Hack</a>
-
-    </div>
-    <h2 style="text-align: center;">Unique ID</h2>
-
-<p id="unique-ids" style="font-size: 25px; text-align: center;">Loading...</p>
-<input id="generate-button" type="button" value="Generate" />
-    <button type="button" onclick="alert('You just got 100000000 robux added to your account.')">Robux</button>
+    <p id="one"></p>
+    <button onclick="random('You just got  robux added to your account')">Random</button><br>
+    <p>You just got ? robux added to your account</p>
+    <script>
+     function random(){
+    
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 12534534);
+    }
+    </script>
+    
 </body>
 </html>
