@@ -109,7 +109,12 @@ height: 175px;
 padding: 25px;
 font-size: xx-large;}
 
-
+p{background-color: rgb(89, 53, 0);
+border: 10px solid rgb(50, 37, 0);
+margin: 25px;
+color: white;
+padding: 25px;
+font-size: xx-large;}
 
 
 div{margin-inline: 50px;
@@ -133,11 +138,20 @@ margin-bottom: 50px;
         <a href="Brown.Html" class="Br">Brown</a>
     </div>
     <div>
+        <p id="one"></p>
+        <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+        <script>
+     function random(){
+    
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+    }
+    </script>
         <h1>Brown</h1><br>
 <button type="button" onclick="alert('Just Brown')" class="Pal">Bworn</button>
+<p>
 Brown is a warm and neutral color that can evoke feelings of comfort, stability, and reliability. <br>
 It is a versatile color that can be found in many natural elements, such as wood, leather, and fur. 
- 
+ </p>
     </div>
 </body>
 </html>

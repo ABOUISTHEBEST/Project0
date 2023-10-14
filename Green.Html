@@ -108,7 +108,12 @@ width: 175px;
 height: 175px;
 padding: 25px;
 font-size: xx-large;}
-
+p{background-color: rgb(0, 162, 22);
+border: 10px solid rgb(13, 115, 0);
+margin: 25px;
+color: white;
+padding: 25px;
+font-size: xx-large;}
 
 
 
@@ -133,11 +138,20 @@ margin-bottom: 50px;
         <a href="Brown.Html" class="Br">Brown</a>
     </div>
     <div>
+        <p id="one"></p>
+        <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+        <script>
+     function random(){
+    
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+    }
+    </script>
         <h1>Green</h1><br>
 <button type="button" onclick="alert('Just Green')" class="Pal">GRAEW</button>
+<p>
 Green is a secondary color in the subtractive color model, created by mixing blue and yellow.<br>
  In the RGB (Red, Green, Blue) additive color model, it is one of the primary colors.
-
+</p>
     </div>
 </body>
 </html>

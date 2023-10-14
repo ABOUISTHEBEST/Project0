@@ -109,7 +109,12 @@ height: 175px;
 padding: 25px;
 font-size: xx-large;}
 
-
+p{background-color: rgb(0, 179, 255);
+border: 10px solid rgb(0, 127, 181);
+margin: 25px;
+color: white;
+padding: 25px;
+font-size: xx-large;}
 
 
 div{margin-inline: 50px;
@@ -133,11 +138,20 @@ margin-bottom: 50px;
         <a href="Brown.Html" class="Br">Brown</a>
     </div>
     <div>
+        <p id="one"></p>
+        <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+        <script>
+     function random(){
+    
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+    }
+    </script>
         <h1>Blue</h1><br>
 <button type="button" onclick="alert('Just Blue')" class="Pal">Blwe</button>
+<p>
 Blue can convey a sense of dependability and trustworthiness,<br>
  making it a preferred choice in branding for businesses and products aiming to establish trust with consumers.
- 
+ </p>
     </div>
 </body>
 </html>

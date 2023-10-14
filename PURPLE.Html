@@ -108,7 +108,12 @@ width: 175px;
 height: 175px;
 padding: 25px;
 font-size: xx-large;}
-
+p{background-color: rgb(153, 0, 255);
+border: 10px solid rgb(94, 0, 181);
+margin: 25px;
+color: white;
+padding: 25px;
+font-size: xx-large;}
 
 
 
@@ -133,11 +138,20 @@ margin-bottom: 50px;
         <a href="Brown.Html" class="Br">Brown</a>
     </div>
     <div>
+        <p id="one"></p>
+        <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+        <script>
+     function random(){
+    
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+    }
+    </script>
         <h1>PURPLE</h1><br>
 <button type="button" onclick="alert('Just Purple')" class="Pal">PALPAL</button>
+<p>
 Royal and Regal: Purple has historically been associated with royalty, nobility, and luxury.<br>
  In many cultures, purple was a symbol of power and wealth because the dye used to create the color was rare and expensive.
-
+</p>
     </div>
 </body>
 </html>

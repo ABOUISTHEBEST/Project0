@@ -108,7 +108,12 @@ width: 175px;
 height: 175px;
 padding: 25px;
 font-size: xx-large;}
-
+p{background-color: rgb(112, 112, 112);
+border: 10px solid rgb(68, 68, 68);
+margin: 25px;
+color: white;
+padding: 25px;
+font-size: xx-large;}
 
 
 
@@ -133,11 +138,20 @@ margin-bottom: 50px;
         <a href="Brown.Html" class="Br">Brown</a>
     </div>
     <div>
+        <p id="one"></p>
+        <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+        <script>
+     function random(){
+    
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+    }
+    </script>
         <h1>Gray</h1><br>
 <button type="button" onclick="alert('Just Gray')" class="Pal">Gway</button>
+<p>
 Gray is considered a neutral color because it falls between black and white on the color spectrum.<br>
  As such, it is often used to create a neutral and balanced backdrop in various design and decor contexts.
- 
+ </p>
     </div>
 </body>
 </html>

@@ -109,7 +109,12 @@ height: 175px;
 padding: 25px;
 font-size: xx-large;}
 
-
+p{background-color: rgb(255, 0, 255);
+border: 10px solid rgb(181, 0, 136);
+margin: 25px;
+color: white;
+padding: 25px;
+font-size: xx-large;}
 
 
 div{margin-inline: 50px;
@@ -133,11 +138,20 @@ margin-bottom: 50px;
         <a href="Brown.Html" class="Br">Brown</a>
     </div>
     <div>
+        <p id="one"></p>
+        <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+        <script>
+     function random(){
+    
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+    }
+    </script>
         <h1>Pink</h1><br>
 <button type="button" onclick="alert('Just Pink')" class="Pal">Pwnk</button>
+<p>
 Bright and vibrant shades of pink can be playful and energetic.<br>
  It is a color commonly used in children's toys, playful designs, and whimsical settings.
- 
+</p>
     </div>
 </body>
 </html>

@@ -109,7 +109,12 @@
         padding: 25px;
         font-size: xx-large;}
         
-        
+        p{background-color: Orange;
+border: 10px solid darkorange;
+margin: 25px;
+color: white;
+padding: 25px;
+font-size: xx-large;}
         
         
         div{margin-inline: 50px;
@@ -132,11 +137,20 @@
                 <a href="White.html" class="Wh">White</a>
                 <a href="Brown.Html" class="Br">Brown</a>
             </div>
+            <p id="one"></p>
+            <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+                <script>
+             function random(){
+            
+            document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+            }
+            </script>
             <h1>Orange</h1><br>
 <button type="button" onclick="alert('Just Orange')" class="Pal">Oawge</button>
+<p>
 Orange is a secondary color created by mixing equal parts of red and yellow.<br>
  It has a dominant wavelength in the range of approximately 590-620 nanometers, giving it a bright and energetic appearance.
-
+</p>
     </div>
 </body>
 </html>

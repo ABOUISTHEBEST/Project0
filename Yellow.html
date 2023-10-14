@@ -108,7 +108,12 @@
         height: 175px;
         padding: 25px;
         font-size: xx-large;}
-        
+        p{background-color: yellow;
+border: 10px solid gold;
+margin: 25px;
+color: black;
+padding: 25px;
+font-size: xx-large;}
         
         
         
@@ -132,12 +137,21 @@
                 <a href="White.html" class="Wh">White</a>
                 <a href="Brown.Html" class="Br">Brown</a>
             </div>
+            <p id="one"></p>
+            <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+            <script>
+         function random(){
+        
+        document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+        }
+        </script>
             <h1>Yellow</h1><br>
 <button type="button" onclick="alert('Just Yellow')" class="Pal">YALOW</button>
+<p>
 Yellow is one of the primary colors in the subtractive color model (along with red and blue)<br>
 it's created by reflecting light with a dominant wavelength of approximately 570-590 nanometers.<br>
  This gives it a distinct and luminous quality.
-
+</p>
     </div>
 </body>
 </html>

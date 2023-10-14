@@ -108,7 +108,12 @@ width: 175px;
 height: 175px;
 padding: 25px;
 font-size: xx-large;}
-
+p{background-color: rgb(255, 255, 255);
+border: 10px solid rgb(218, 218, 218);
+margin: 25px;
+color: black;
+padding: 25px;
+font-size: xx-large;}
 
 
 
@@ -133,12 +138,21 @@ margin-bottom: 50px;
         <a href="Brown.Html" class="Br">Brown</a>
     </div>
     <div>
+        <p id="one"></p>
+        <button onclick="random('Red love 1 outta 10 generator')">Random</button><br>
+        <script>
+     function random(){
+    
+    document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+    }
+    </script>
         <h1>White</h1><br>
 <button type="button" onclick="alert('Just White')" class="Pal">Wiwe</button>
+<p>
 White is often associated with purity, innocence, cleanliness, and simplicity. <br>
 It is a color commonly used in weddings to symbolize purity and new beginnings. <br>
 White is also used in medical settings, such as lab coats and hospital uniforms, to convey cleanliness and sterility.
- 
+ </p>
     </div>
 </body>
 </html>
